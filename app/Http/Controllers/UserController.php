@@ -14,6 +14,7 @@ class UserController extends Controller
     //
     public function get_dashboard()
     {
+        Log::info("get dashboard");
         // Menghitung total pengguna
         $totalUsers = User::count();
 
